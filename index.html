@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<style>
+    .container {
+        width: 560px;
+        height: 560px;
+        background-image: linear-gradient(to top, #ccffff, #ffcccc);
+        margin: auto;
+        border: 3px solid black;
+        padding: 1px;
+
+        display: grid;
+        grid-gap: 1px;
+        grid-template-rows: repeat(var(--grid-rows), 1fr);
+        grid-template-columns: repeat(var(--grid-cols), 1fr);
+
+    }
+
+    .grid-item {
+        border: 1px solid #dddd;
+        text-align: center;
+    }
+
+    button {
+        height: 30px;
+        width: 100px;
+        margin-top: 30px;
+
+    }
+
+
+</style>
+
+
+<html>
+
+<title>Etch-A-Sketch</title>
+
+<body>
+
+
+    <div class="container" id="container">
+
+    </div>
+
+    <center>
+        <button id="reset">Reset</button>
+    </center>
+
+</body>
+
+</html>
+
+
+<script src="java.js"></script>
